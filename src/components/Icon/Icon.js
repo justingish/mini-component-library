@@ -17,6 +17,8 @@ const icons = {
 const Icon = ({ id, size, strokeWidth = 1, ...delegated }) => {
   const Component = icons[id];
 
+  console.log(size);
+
   if (!Component) {
     throw new Error(`No icon found for ID: ${id}`);
   }
